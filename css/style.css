@@ -44,6 +44,10 @@ nav a{
     flex-direction: column;
 }
 
+
+
+
+
 .card1{
     margin-top: 20px;
     background: rgb(76, 240, 76);
@@ -96,6 +100,10 @@ nav a{
     background-color: yellowgreen;
 }
 
+
+
+
+
 .card2{
     margin-top: 100px;
     background: rgb(76, 240, 76);
@@ -124,6 +132,57 @@ nav a{
     justify-content: start;
     align-items: start;
 }
+.contenedor_principal{
+    width: 950px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+}
+.contenido_sobremi{
+    width: 250px;
+    height: 270px;
+    background-color: white;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+.titulo1{
+    padding-bottom: 50px;
+    margin-top: 15px;
+    font-family: arial;
+}
+.parrafo1 li{
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+.contenido_especial{
+    width: 250px;
+    height: 270px;
+    background-color: white;
+    margin-right: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+.titulo2{
+    margin-bottom: 50px; 
+    margin-top: 15px;
+    font-family: arial;
+}
+.parrafo2 li{
+    margin-bottom: 20px;
+    margin-right: 140px;
+}
+
+
+
+
+
 .card3{
     margin-top: 100px;
     background: rgb(76, 240, 76);
