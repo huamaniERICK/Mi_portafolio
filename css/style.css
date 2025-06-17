@@ -144,7 +144,7 @@ nav a{
     width: 250px;
     height: 270px;
     background-color: white;
-    margin-left: 200px;
+    margin-left: 150px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -163,7 +163,7 @@ nav a{
     width: 250px;
     height: 270px;
     background-color: white;
-    margin-right: 200px;
+    margin-right: 150px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -190,10 +190,93 @@ nav a{
     height: 500px;
     border-radius: 30px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     box-shadow: 2px 3px 2px 3px rgba(2,2,2,2);
 }
+.subtitulo2{
+    color: blue;
+    font-size: 30px;
+    font-family: avigea; 
+    margin-left: 50px;
+    margin-top: 30px;
+    justify-content: start;
+    align-items: start; 
+}
+.contenedor-proyectos{
+    width: 900px;
+    height: 420px;
+    margin-left: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proyecto1{
+    width: 300px;
+    height: 400px;
+    background: yellow;
+    margin: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.img1{
+    background-image: url(../assets/planta.png);
+    background-size: cover;
+    width: 250px;
+    height: 230px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.titulo-proyecto1{
+    color: grey;
+    font-family: arial;
+    margin-bottom: 20px;
+}
+.vinculo1{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: arial;
+    color: red;
+}
+.proyecto2{
+    width: 300px;
+    height: 400px;
+    background: yellow;
+    margin: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.img2{
+    background-image: url(../assets/DiseñoGrafico.png);
+    background-size: cover;
+    width: 250px;
+    height: 230px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.titulo-proyecto2{
+    color: grey;
+    font-family: arial;
+    margin-bottom: 20px;
+}
+.vinculo2{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: arial;
+    color: red;
+}
+
+
+
+
+
 .card4{
     margin-top: 100px;
     margin-bottom: 100px;
