@@ -92,7 +92,7 @@ nav a{
     color: white;
     text-decoration: none;
     border-radius: 50px;
-   border: none;
+    border: none;
     cursor: pointer;
     transition: background-color 0,3s;
 }
@@ -172,9 +172,29 @@ nav a{
     margin-top: 15px;
     font-family: arial;
 }
-.parrafo2 li{
-    margin-bottom: 20px;
-    margin-right: 140px;
+.tecnologias{
+    width: 70%;
+    margin: 10px 0;
+    border: 1px solid #eb0b0b;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.nombre-tecnologia{
+    background-color: #0e21f5;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+.barra-progreso{
+    height: 20px;
+    background-color: aqua;
+}
+.progreso{
+    height: 100%;
+    background-color:rgb(10, 254, 10);
+}
+.porcentage{
+    padding: 5px 10px;
+    text-align: right;
 }
 
 
@@ -294,7 +314,6 @@ nav a{
 .contenedor-contactos{
     width: 900px;
     height: 371px;
-    background: red;
     margin-left: 48px;
     display: flex;
     justify-content: space-between;
@@ -351,8 +370,39 @@ nav a{
     display: flex;
     flex-direction: column;
 }
+.formulario label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 15px;
+}
+.formulario input{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border: 2px solid #0e21f5;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.formulario button{
+    background-color: rgb(3, 99, 3);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-left: 140px;
+    cursor: pointer;
+    transition: background-color 0,10s;
+}
+button:hover{
+    background-color: rgb(0, 255, 0);
+}
 .copyright{
-    margin-left: 400px;
+    margin-left: 350px;
     font-size: 20px;
     
 }
