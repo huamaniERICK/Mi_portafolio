@@ -13,29 +13,43 @@ body{
 }
 
 nav{
-    background: rgb(22, 230, 22);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: black;
     border-radius: 50px;
     width: 1000px;
-    height: 70px;
+    height: 65px;
     display: flex;
     justify-content: end;
     align-items: center;
-    margin-top: 10PX;
-    box-shadow: 1px 2px 2px 2px rgba(0,0,0,2);
+    margin-top: 5PX;
+    margin-left: 190px;
+    box-shadow: 0 0 10px rgb(14, 250, 14), 0 0 20px rgba(0, 255, 0, 0.888),
+    0 0 30px rgb(0, 255, 0), inset 0 0 5px rgba(4, 201, 4, 0.8);
 }
 
 nav a{
     text-decoration: none;
-    color: black;
+    color: white;
     padding-left: 40px;
     text-align: center;
     padding-right: 20px;
+    border-radius: 20px;
+    transition: color 0.3s ease;
+    transition: transform 0.3s;
+}
+nav a:hover{
+    color: lime;
+    transform: translateY(-3px);
 }
 .nombre{
-    color: blue;
+    color: rgb(0, 183, 255);
     margin-right: 400px;
     font-size: 25px;
     font-family: avigea;
+    text-shadow: 0 0 20px rgb(4, 218, 251)
 }
 .contenedor1{
     width: 300px;
@@ -49,29 +63,44 @@ nav a{
 
 
 .card1{
-    margin-top: 20px;
-    background: rgb(76, 240, 76);
+    margin-top: 105px;
+    background: black;
     width: 1000px;
     height: 500px;
     border-radius: 30px;
     display: flex;
     align-items: start;
-    box-shadow: 2px 3px 2px 3px rgba(2,2,2,2);
+    box-shadow: 0 0 10px rgb(255, 89, 0),
+    0 0 20px rgb(255, 89, 0),
+    inset 0 0 5px rgb(255, 89, 0);
     
 }
+.contenedor1{
+    width: 400px;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 30px;
+    display: flex;
+}
 .card-nombre{
-    color:blue;
+    color:rgb(6, 158, 240);
     font-size: 30px;
     font-family: avigea; 
-    margin-left: 50px;
+    margin-left: 75px;
     padding-bottom: 50px;
     padding-top:100px;
 }
 .card-descripcion{
-    color:rgb(3, 3, 51);
+    color:rgb(255, 67, 4);
     font-family: Arial;  
-    text-align: left;
-    padding-left: 50px;
+    padding-left: 100px;
+    
+}
+.contenedor2{
+    width: 500px;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 10px;
 }
 .card-img{
     background-image: url(../assets/mi\ foto.jpg);
@@ -79,25 +108,29 @@ nav a{
     height: 200px;
     width: 200px;
     border-radius: 100px;
-    margin-left: 300px;
-    margin-top: 130px;
+    margin-left: 200px;
+    margin-top: 100px;
     background-position: center;
+    box-shadow: 0 0 10px rgb(237, 42, 75), 0 0 20px rgb(239, 12, 167);
 }
 .boton-descarga{
     display: inline-block;
     padding: 20px 30px;
-    margin-top: 50px;
-    margin-left: 50px;
-    background-color: rgb(3, 80, 3);
+    margin-top: 30px;
+    margin-right: 50px;
+    background-color: rgb(0, 204, 255);
     color: white;
     text-decoration: none;
     border-radius: 50px;
     border: none;
     cursor: pointer;
-    transition: background-color 0,3s;
+    transition: background-color 0.3s;
+    transition: transform 0.3s;
 }
 .boton-descarga:hover{
-    background-color: yellowgreen;
+    background-color: rgb(255, 89, 0);
+    transform: translateY(-7px);
+
 }
 
 
@@ -106,27 +139,29 @@ nav a{
 
 .card2{
     margin-top: 100px;
-    background: rgb(76, 240, 76);
+    background:black;
     width: 1000px;
     height: 500px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 3px 2px 3px rgba(2,2,2,2);
+    box-shadow: 0 0 10px rgb(38, 255, 0),
+    0 0 20px rgb(0, 255, 21),
+    inset 0 0 5px rgba(0, 253, 8, 0.932);
 }
 .subtitulo{
-    color: blue;
+    color: rgb(6, 158, 240);
     font-size: 30px;
     font-family: avigea; 
     margin-left: 50px;
     margin-top: 30px;
 }
 .descripcion_personal{
-    color: black;
+    color: rgb(255, 89, 0);
     font-family: arial; 
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 20px;
+    margin-top: 15px;
     justify-content: start;
     align-items: start;
 }
@@ -137,40 +172,59 @@ nav a{
     justify-content: space-between;
     align-items: center;
     margin-left: 25px;
+    margin-top: 15px;
 }
 .contenido_sobremi{
     width: 250px;
     height: 270px;
-    background-color: white;
+    background-color: black;
     margin-left: 150px;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 25px;
+    box-shadow: 0 0 10px rgb(238, 0, 255),
+    0 0 20px rgb(255, 0, 255),
+    inset 0 0 5px rgba(253, 0, 215, 0.932);
+    transition: transform 0.3s;
+}
+.contenido_sobremi:hover{
+    transform:translateY(-7px) ;
 }
 .titulo1{
     padding-bottom: 50px;
     margin-top: 15px;
     font-family: arial;
+    color: rgb(230, 0, 96);
 }
 .parrafo1 li{
     margin-bottom: 20px;
-    margin-right: 25px;
+    margin-left: 5px;
+    color: rgb(178, 174, 174);
+    font-family: clarendon BT;
 }
 .contenido_especial{
     width: 250px;
     height: 270px;
-    background-color: white;
+    background-color: black;
     margin-right: 150px;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 25px;
+    box-shadow: 0 0 10px rgb(0, 187, 255),
+    0 0 20px rgb(0, 157, 255),
+    inset 0 0 5px rgba(0, 148, 253, 0.932);
+    transition: transform 0.3s;
+}
+.contenido_especial:hover{
+    transform:translateY(-7px) ;
 }
 .titulo2{
     margin-bottom: 50px; 
     margin-top: 15px;
     font-family: arial;
+    color: rgb(6, 158, 240);
 }
 .tecnologias{
     width: 70%;
@@ -203,16 +257,18 @@ nav a{
 
 .card3{
     margin-top: 100px;
-    background: rgb(76, 240, 76);
+    background: black;
     width: 1000px;
     height: 500px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 3px 2px 3px rgba(2,2,2,2);
+    box-shadow: 0 0 10px rgb(255, 89, 0),
+    0 0 20px rgb(255, 89, 0),
+    inset 0 0 5px rgb(255, 89, 0);
 }
 .subtitulo2{
-    color: blue;
+    color: rgb(6, 158, 240);
     font-size: 30px;
     font-family: avigea; 
     margin-left: 50px;
@@ -227,15 +283,24 @@ nav a{
     justify-content: center;
 }
 .proyecto1{
+    position: relative;
     width: 300px;
     height: 400px;
-    background: yellow;
+    background: black;
     margin: 80px;
     border-radius: 20px;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
+    box-shadow: 0 0 10px rgb(0, 187, 255),
+    0 0 20px rgb(0, 157, 255),
+    inset 0 0 5px rgba(0, 148, 253, 0.932);
+    transition: transform 0.3s;
+    
+}
+.proyecto1:hover{
+    transform:translateY(-7px) ;
 }
 .img1{
     background-image: url(../assets/planta.png);
@@ -244,29 +309,43 @@ nav a{
     height: 230px;
     border-radius: 20px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .titulo-proyecto1{
-    color: grey;
+    color: lime;
     font-family: arial;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+}
+.BioSync{
+    color: gray;
+    padding: 3px;
 }
 .vinculo1{
     text-decoration: none;
-    font-weight: bold;
-    font-family: arial;
-    color: red;
+    color: blue;
+    transition: transform 0.3s;
+}
+.vinculo1:hover{
+    color: rgb(0, 174, 255);
+    transform: translateY(-3px);
 }
 .proyecto2{
     width: 300px;
     height: 400px;
-    background: yellow;
+    background-color:black;
     margin: 80px;
     border-radius: 20px;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
+    box-shadow: 0 0 10px rgb(238, 0, 255),
+    0 0 20px rgb(255, 0, 255),
+    inset 0 0 5px rgba(253, 0, 215, 0.932);
+    transition: transform 0.3s;
+}
+.proyecto2:hover{
+    transform:translateY(-7px) ;
 }
 .img2{
     background-image: url(../assets/logo\ diseño\ grafico.jpg);
@@ -278,15 +357,22 @@ nav a{
     margin-bottom: 20px;
 }
 .titulo-proyecto2{
-    color: grey;
+    color: lime;
     font-family: arial;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+}
+.diseño_grafico{
+    color: gray;
+    padding: 3px;
 }
 .vinculo2{
     text-decoration: none;
-    font-weight: bold;
-    font-family: arial;
-    color: red;
+    color: blue;
+    transition: transform 0.3s;
+}
+.vinculo2:hover{
+    color: rgb(0, 174, 255);
+    transform: translateY(-3px);
 }
 
 
@@ -295,7 +381,7 @@ nav a{
 
 .card4{
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     background: rgb(76, 240, 76);
     width: 1000px;
     height: 500px;
@@ -402,7 +488,16 @@ button:hover{
     background-color: rgb(0, 255, 0);
 }
 .copyright{
-    margin-left: 350px;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.derechos{
+    text-decoration: none;
+    color: white;
     font-size: 20px;
-    
 }
