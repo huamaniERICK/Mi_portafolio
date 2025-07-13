@@ -228,27 +228,14 @@ nav a:hover{
 }
 .tecnologias{
     width: 70%;
-    margin: 10px 0;
-    border: 1px solid #eb0b0b;
+    margin-top: -20px;
     border-radius: 5px;
     overflow: hidden;
 }
 .nombre-tecnologia{
-    background-color: #0e21f5;
+    color: rgb(181, 181, 181);
     padding: 5px 10px;
-    font-weight: bold;
-}
-.barra-progreso{
-    height: 20px;
-    background-color: aqua;
-}
-.progreso{
-    height: 100%;
-    background-color:rgb(10, 254, 10);
-}
-.porcentage{
-    padding: 5px 10px;
-    text-align: right;
+    font-family: tahoma;
 }
 
 
