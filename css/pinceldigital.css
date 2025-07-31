@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.caja{
+    width: 500px;
+    height: 75px;
+    margin-top: 5px;
+    background: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(38, 255, 0),
+    0 0 20px rgb(0, 255, 21),
+    0 0 10px rgb(22, 255, 22),
+    inset 0 0 0px rgba(0, 253, 8, 0.932);
+}
+.titulo{
+    font-size: 50px;
+    font-family:hey lover ;
+    color: lime;
+}
+.contenido_pinceldigital{
+    margin-top: 15px;
+    width:85%;
+    height: 520px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(238, 0, 255),
+    0 0 20px rgb(255, 0, 255),
+    0 0 10px rgba(255, 0, 255, 0.908),
+    inset 0 0 0px rgba(253, 0, 215, 0.932);
+}
